@@ -69,6 +69,8 @@
  border-radius: 35px;
   color: black;
   background-color: white;
+  padding-inline: 10px;
+
 }
 
 .search {
@@ -101,6 +103,7 @@
     width: 100%;
   }
 
+
   .text {
     font-size: 16px;
   }
@@ -111,5 +114,40 @@
 
   .search {
     width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .Container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  
+
+  .text {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 66px;
+  }
+
+  .input {
+    width: 100%;
+    padding-inline: 10px;
+  }
+
+  
+  .google {
+    width: 85%;
+    margin-top: 80px;
+    
+  }
+
+  .search {
+    width: 80%;
   }
 }

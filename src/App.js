@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import {BiSearch} from "react-icons/bi"
+import {BiMicrophone} from "react-icons/bi"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <div className="google">
+        <h1 className="title">Google</h1>
+        <div className="input">
+        <BiSearch size={30} color="grey"/>
+          <input type="text" placeholder="Search Google or type a URL" className="search" />
+          <BiMicrophone size={20} color="blue"/>
+        </div>
+      </div>
     </div>
   );
 }
